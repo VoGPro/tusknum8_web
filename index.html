@@ -14,17 +14,17 @@
 
     <!-- The form -->
     <div class="form-popup" id="myForm">
-        <form action="/action_page.php" class="form-container">
+        <form action="https://formcarry.com/s/qSlSUC8xf" method="POST" class="form-container">
             <h1>Send Feedback</h1>
 
             <label for="name"><b>Name</b></label>
-            <input type="text" placeholder="Enter Name" name="name" required>
+            <input id="inpName" type="text" placeholder="Enter Name" name="name" required>
 
             <label for="email"><b>Email</b></label>
-            <input type="text" placeholder="Enter Email" name="email" required>
+            <input id="inpEmail" type="text" placeholder="Enter Email" name="email" required>
 
             <label for="feedback"><b>Message</b></label>
-            <textarea name="field-name" spellcheck="false" placeholder="Enter Message"></textarea>
+            <textarea id="inpMessage" name="field-name" spellcheck="false" placeholder="Enter Message"></textarea>
 
             <div class="agreement">
                 <label><input type="checkbox" name="check-1" required/>
@@ -32,7 +32,7 @@
                 </label>
             </div>
 
-            <button type="submit" class="btn">Send</button>
+            <button type="submit" class="btn" onclick="sendForm()">Send</button>
             <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
         </form>
     </div>
